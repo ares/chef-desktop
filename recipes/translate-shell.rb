@@ -3,7 +3,7 @@ remote_file "/home/#{node[:user]}/.bin/trans" do
   owner node[:user]
   group node[:user]
   mode '0755'
-  creates "/home/#{node[:user]}/.bin/trans"
+  action :create_if_missing
 end
 
 template "/home/#{node[:user]}/.oh-my-zsh/custom/translate-shell.plugin.zsh" do
