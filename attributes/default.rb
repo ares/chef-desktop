@@ -9,7 +9,7 @@ default[:desktop][:de][:enable]      = true
 
 default[:desktop][:chrome][:enable]   = true
 default[:desktop][:mplayer][:enable]  = true
-default[:desktop][:owncloud][:enable] = false
+default[:desktop][:nextcloud][:enable] =  default[:desktop][:owncloud][:enable] || false
 default[:desktop][:psi][:enable]      = false
 default[:desktop][:ssh_keys][:enable] = true
 default[:desktop][:synergy][:enable]  = false

@@ -11,7 +11,7 @@ include_recipe "desktop::directories"
 include_recipe "desktop::keepassx" if node[:desktop][:keepass][:enable]
 include_recipe "desktop::chrome" if node[:desktop][:chrome][:enable]
 include_recipe "desktop::mplayer" if node[:desktop][:mplayer][:enable]
-include_recipe "desktop::owncloud" if node[:desktop][:owncloud][:enable]
+include_recipe "desktop::nextcloud" if node[:desktop][:nextcloud][:enable]
 include_recipe "desktop::psi" if node[:desktop][:psi][:enable]
 include_recipe "desktop::ssh_keys" if node[:desktop][:ssh_keys][:enable]
 include_recipe "desktop::synergy" if node[:desktop][:synergy][:enable]
