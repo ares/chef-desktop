@@ -1,0 +1,8 @@
+root = <%= @source %>
+root = <%= @target %>
+<% @options.each do |key, value| %>
+<%= key %> = <%= value %>
+<% end %>
+<% @ignore.each do |value| %>
+ignore = <%= value %>
+<% end %>

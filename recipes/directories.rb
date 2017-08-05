@@ -7,6 +7,8 @@ directories = %W(
   /home/#{node[:user]}/Obrazky
   /home/#{node[:user]}/Dokumenty
   /home/#{node[:user]}/Certifikaty
+  /home/#{node[:user]}/Fotky
+  /home/#{node[:user]}/Zvuky
   /home/#{node[:user]}/.bin
 )
 

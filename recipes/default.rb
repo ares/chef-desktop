@@ -20,3 +20,4 @@ include_recipe "desktop::translate-shell" if node[:desktop][:'translate-shell'][
 include_recipe "desktop::scripts" if node[:desktop][:scripts][:enable]
 include_recipe "desktop::kerberos" if node[:desktop][:kerberos][:enable]
 include_recipe "desktop::kvirc" if node[:desktop][:kvirc][:enable]
+include_recipe "desktop::unison" if node[:desktop][:unison][:enable]

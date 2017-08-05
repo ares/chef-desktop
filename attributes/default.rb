@@ -18,3 +18,4 @@ default[:desktop][:'translate-shell'][:enable] = true
 default[:desktop][:scripts][:enable]  = true
 default[:desktop][:kerberos][:enable] = false
 default[:desktop][:kvirc][:enable] = false
+default[:desktop][:unison][:enable] = true
