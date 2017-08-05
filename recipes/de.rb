@@ -25,6 +25,11 @@ case node[:platform_family]
     package 'firefox'
 end
 
+case node[:platform_family]
+  when 'fodora', 'redhat', 'centos'
+    package 'fuse-exfat'
+end
+
 case node[:desktop][:de][:environment]
   when 'kde'
     case node[:platform]
